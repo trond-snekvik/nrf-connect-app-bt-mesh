@@ -1,13 +1,13 @@
-# Application template for nRF Connect SDK
+# Bluetooth Mesh application template
 
-Blank starting point for an nRF Connect SDK application.
+Blank starting point for an nRF Connect SDK application with Bluetooth Mesh support.
 
 ## Get started
 
 The repo contains a top level West manifest that will initialize an instance of the nRF Connect SDK around the application directory. Use the following commands to initialize your workspace:
 
 ```
-west init -m https://github.com/trond-snekvik/nrf-connect-app my-project
+west init -m https://github.com/trond-snekvik/nrf-connect-app-bt-mesh my-project
 cd my-project
 west update -n -o=--depth=1
 ```
@@ -29,6 +29,6 @@ If you already have an nRF Connect SDK, you can clone this repo next to ./nrf an
 The west.yml file in the app will be ignored, but you can reconfigure your west workspace to use the application's manifest later by calling:
 
 ```
-west config manifest.path nrf-connect-app
+west config manifest.path nrf-connect-app-bt-mesh
 west update
 ```
